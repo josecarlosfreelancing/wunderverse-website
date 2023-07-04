@@ -1,0 +1,435 @@
+.home {
+    min-height: 100vh;
+    height: 100%;
+    background-image:   
+                        url('../../assets/images/team/Lion.gif'),
+                        url('../../assets/images/team/Boi.gif'),
+                        url('../../assets/images/team/Cat.gif'),
+                        url('../../assets/images/team/cyberboi.gif'),
+                        url('../../assets/images/team/Harbinger.gif'),
+                        url('../../assets/images/background.png');
+    background-size: 100% auto,100% auto,100% auto,100% auto,100% auto,100% 100%;
+    background-position: center 85%, center center, center 90%, center 75%, center 80%, center center;
+    background-repeat: no-repeat;
+
+    .home-container {
+        .discord-link {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+
+            .discord-container {
+                position: relative;
+                background-color: #FECE42;
+                padding: 5px;
+                border: 3px solid #262261;
+                box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+
+                .border-image {
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    z-index: 1;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .border-left-top {
+                    left: -4px;
+                    top: -6px;
+                    transform: rotate(180deg);
+                }
+
+                .border-left-bottom {
+                    left: -4px;
+                    bottom: -6px;
+                    transform: rotate(90deg);
+                }
+
+                .border-right-bottom {
+                    right: -4px;
+                    bottom: -6px;
+
+                }
+
+                .border-right-top {
+                    right: -4px;
+                    top: -6px;
+                    transform: rotate(270deg);
+                }
+
+
+                .discord-internal-container {
+
+                    position: relative;
+                    text-transform: uppercase;
+                    display: flex;
+                    align-items: center;
+                    gap: 32px;
+                    background-color: #FECE42;
+                    border: 3px solid #6E00FF;
+                    border-radius: 2px;
+                    .image-panel {
+                        img {
+                            vertical-align: bottom;
+                        }
+                    }
+
+                    .ghost-image {
+                        position: absolute;
+                        bottom: 0;
+                        img {
+                            vertical-align: bottom;
+                        }
+                    }
+
+                    .content-panel {
+                        padding-left: 32px;
+                        color: #1E1B4E;
+                        font-weight: bold;
+                        text-align: left;
+                        
+                        .discord-title {
+                            font-size: 24px;
+                        }
+
+                        .discord-content {
+                            font-size: 48px;
+                        }
+                    }
+
+                    .link-panel {
+                        display: flex;
+                        align-items: center;
+                        padding-right: 20px;
+
+                        .enter-button {
+                            padding: 18px 30px;
+                            font-size: 24px;
+                            font-weight: bold;
+                            line-height: 20px;
+                            text-align: center;
+                            color: #262261;
+                            background: #00FFFF;
+                            border: 3px solid #1E1B4E;
+                            border-radius: 9.13793px;
+                            cursor: pointer;
+                            a {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1920px) {
+    .home {
+        background-image:   
+        url('../../assets/images/team/Lion.gif'),
+        url('../../assets/images/team/Boi.gif'),
+        url('../../assets/images/team/Cat.gif'),
+        url('../../assets/images/team/cyberboi.gif'),
+        url('../../assets/images/team/Harbinger.gif'),
+        url('../../assets/images/background.png');
+        background-size: 100% 90%,100% 90%,100% 90%,100% 90%,100% 90%,100% 100%;
+        background-repeat: no-repeat;
+        .home-container {
+    
+            // height: 100%;
+            // position: relative;
+    
+            .discord-link {
+                position: absolute;
+                bottom: 2vw;
+                right: 2vw;
+    
+                .discord-container {
+                    position: relative;
+                    
+                    padding: .25vw;
+                    border: .15vw solid #262261;
+                    box-shadow: .15vw .15vw 0px rgba(0, 0, 0, 0.5);
+
+                    .border-image {
+                        position: absolute;
+                        width: 2vw;
+                        height: 2vw;
+                        z-index: 1;
+    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+    
+                    .border-left-top {
+                        left: -.5vw;
+                        top: -.5vw;
+                        transform: rotate(180deg);
+                    }
+    
+                    .border-left-bottom {
+                        left: -.5vw;
+                        bottom: -.5vw;
+                        transform: rotate(90deg);
+                    }
+    
+                    .border-right-bottom {
+                        right: -.5vw;
+                        bottom: -.5vw;
+    
+                    }
+    
+                    .border-right-top {
+                        right: -.5vw;
+                        top: -.5vw;
+                        transform: rotate(270deg);
+                    }
+
+                    .discord-internal-container {
+                   
+                        text-transform: uppercase;
+                        display: flex;
+                        align-items: center;
+                        gap: 1.6vw;
+                        background-color: #FECE42;
+                        border: .15vw solid #6E00FF;
+                        
+                        border-radius: 2px;
+        
+                        .image-panel {
+                            height: 6.5vw;
+
+                            img {
+                                height: 100%;
+                            }
+                        }
+        
+                        .ghost-image {
+                            left: 0vw;
+                            height: auto;
+                            width: 42%;
+                            position: absolute;
+                            bottom: 0;
+
+                            img {
+                                width: 100%;
+                                // height: 100%;
+                            }
+                        }
+        
+                        .content-panel {
+                            padding-left: 1.6vw;
+                            color: #1E1B4E;
+                            text-align: left;
+                            
+                            .discord-title {
+                                font-size: 1.2vw;
+                            }
+        
+                            .discord-content {
+                                font-size: 2.4vw;
+                            }
+                        }
+        
+                        .link-panel {
+                            display: flex;
+                            align-items: center;
+                            padding-right: 1vw;
+        
+                            .enter-button {
+                                padding: .9vw 1.5vw;
+                                font-size: 1.2vw;
+                                font-weight: bold;
+                                line-height: 1vw;
+                                text-align: center;
+                                color: #262261;
+                                background: #00FFFF;
+                                border: 3px solid #1E1B4E;
+                                border-radius: 9.13793px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+
+
+@media (max-width: 1080px) {
+    .home {
+        min-height: 100vh;
+        height: 100%;
+        background: url('../../assets/images/background-mobile.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    
+        .home-container {
+            .discord-link {
+                position: absolute;
+                width: calc(100% - 120px);
+                bottom: 70px;
+                right: unset;
+                margin-left: 60px;
+
+                .discord-container {
+                    
+                    position: unset;
+                    
+                    padding: 0;
+                    border: none;
+                    
+                    box-shadow: .3vw .3vw 0px rgba(255, 255, 255, 0.6);
+
+                    .border-image {
+                        display: none;
+                        position: absolute;
+                        width: 2vw;
+                        height: 2vw;
+                        z-index: 1;
+    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .discord-internal-container {
+                        position: relative;
+                    
+                        text-transform: uppercase;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 3.2vw;
+                        background: linear-gradient(180deg, #A277DA 0%, #6E00FF 100%);
+                        border: .3vw solid #262261;
+                        border-radius: .2vw;
+    
+                        .image-panel {
+                            height: unset;
+                        }
+        
+                        .ghost-image {
+                            left: 0;
+                            width: 280px;
+                            height: auto;
+                            position: absolute;
+                            bottom: 0;
+
+                            img {
+                                height: auto;
+                            }
+                        }
+        
+                        .content-panel {
+                            padding-left: 6vw;
+                            color: #FFFFFF;
+                            line-height: unset;
+                            text-align: left;
+                            
+                            .discord-title {
+                                font-size: 24px;
+                            }
+        
+                            .discord-content {
+                                font-size: 48px;
+                            }
+                        }
+        
+                        .link-panel {
+                            display: flex;
+                            align-items: center;
+                            padding-right: 2vw;
+        
+                            .enter-button {
+                                padding: 18px 30px;
+                                font-size: 24px;
+                                font-weight: bold;
+                                line-height: 20px;
+                                text-align: center;
+                                color: #262261;
+                                background: #00FFFF;
+                                border: .3vw solid #1E1B4E;
+                                border-radius: 9.13793px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        .home-container {
+            .discord-link {
+                
+                width: calc(100% - 10vw);
+                margin-left: 5vw;
+
+                .discord-container {
+                    .discord-internal-container {
+                        .image-panel {
+                            flex: 0 1 30%;
+                            height: 18vw;
+                            text-align: left;
+
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+
+                        .ghost-image {
+                            left: -1vw;
+                            width: 42%;
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+
+                        .content-panel {
+                            flex: 1 1 40%;
+                            padding-left: 12vw;
+                            // line-height: 7vw;
+                            
+                            .discord-title {
+                                font-size: 3vw;
+                            }
+        
+                            .discord-content {
+                                font-size: 6vw;
+                            }
+                        }
+        
+                        .link-panel {
+                            flex: 0 1 30%;
+                            padding-right: 2.5vw;
+                            display: flex;
+                            justify-content: end;
+        
+                            .enter-button {
+                                padding: 2.5vw 4vw;
+                                font-size: 3vw;
+                                line-height: 2.7vw;
+                                border-radius: 1.5vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

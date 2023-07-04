@@ -1,0 +1,307 @@
+.phase {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .phase-container {
+        background-image: url('../../../assets/images/mint/gallery.png');
+        background-size: 100% auto;
+        position: relative;
+
+        .phase-content {
+            // background: linear-gradient(270deg, rgba(53, 27, 0, 0) 50%, #261200 100%);
+            .phase-cards {
+                z-index: 0 ;
+                padding-top: 300px;
+                display: grid;
+                position: relative;
+                grid-template-rows: repeat(1, 25vw);
+                grid-auto-flow: column;
+                // gap: 20px;
+                overflow: hidden;
+                padding-bottom: 30px;
+                box-sizing: border-box;
+
+                .phase-card {
+                    border-radius: 6.6567px;
+                    transform: matrix(-1, 0, 0, 1, 0, 0);
+                    // transition: transform 400ms ease-in-out 0s;
+                    width: 25vw;
+                    // height: 25vw;
+                    display: flex;
+                    flex-direction: column;
+                    box-sizing: border-box;
+                    padding: 20px;
+
+                    .phase-card-outline {
+                        
+                        padding: 6px;
+                        height: 100%;
+                        border: 3px solid #262261;
+
+                        .phase-card-inline {
+                            height: 100%;
+                            border: 4.4378px solid #262261;
+                            padding: 10px;
+                            box-sizing: border-box;
+
+                            .phase-card-avatar {
+                                height: 100%;
+
+                                background: url('../../../assets/images/shadow.png');
+                                background-repeat: no-repeat;
+                                background-size: 50% auto;
+                                background-position: center bottom;
+
+                                img  {
+                                    max-height: calc(100% - 30px);
+                                    // max-width: 100%;
+                                    // max-height: 100%;
+                                    width: auto;
+                                    height: 100%;
+                                    border-radius: 50%;
+                                    cursor: pointer;   
+                                    vertical-align: bottom; 
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .rectangle {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+    
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .phase-curtain {
+        position: absolute;
+        bottom: 0px;
+        height: 100%;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .phase-ground {
+        flex: auto;
+        padding: 60px 60px;
+        background-image: url('../../../assets/images/mint/wood\ bg\ 1.png');
+        background-size: 100%;
+
+        .phase-ground-cards {
+            display: flex;
+            gap: 80px;
+            z-index: 2;
+            position: relative;
+
+            .phase-ground-card {
+                cursor: pointer;
+                height: 492px;
+                background: url('../../../assets/images/mint/notepad.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                flex: 1;
+
+                .phase-ground-card-title {
+                    padding-top: 25px;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 16px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                }
+
+                .phase-ground-card-description {
+                    padding-top: 100px;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 30px;
+                    width: 400px;
+                    margin: auto;
+                    text-align: left;
+                    
+                    color: #262261;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    .phase-ground-card-paragraph {
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1920px) {
+    .phase {
+
+        .phase-container {
+            .phase-content {
+                .phase-cards {
+                    padding-top: 15vw;
+                    padding-bottom: 1.5vw;
+
+                    .phase-card {
+                        border-radius: 0.3vw;
+                        padding: 1vw;
+    
+                        .phase-card-outline {
+                            padding: .3vw;
+                            border: .15vw solid #262261;
+    
+                            .phase-card-inline {
+                                border: .2vw solid #262261;
+                                padding: .5vw;
+    
+                                .phase-card-avatar {
+                                    img {
+                                        max-height: calc(100% - 1.5vw);
+                                    }
+                                    
+                                }
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+
+        .phase-ground {
+            padding: 3vw 3vw;
+
+            .phase-ground-cards {
+                gap: 4vw;
+
+                .phase-ground-card {
+                    height: 24.6vw;
+    
+                    .phase-ground-card-title {
+                        padding-top: 1.5vw;
+                        font-size: 1.5vw;
+                        line-height: .8vw;
+                    }
+    
+                    .phase-ground-card-description {
+                        padding-top: 5vw;
+                        font-size: 1.2vw;
+                        line-height: 1.5vw;
+                        width: 20vw;
+                        gap: 1.5vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .phase {
+    
+        .phase-container {
+            background-image: url('../../../assets/images/mint/gallery-mobile.png');
+            .phase-content {
+                .phase-cards {
+                    padding-top: 27vw;
+                    grid-template-rows: repeat(1, 50vw);
+                    padding-bottom: 15vw;
+    
+                    .phase-card {
+                        border-radius: .6vw;
+                        width: 50vw;
+                        padding: 2vw;
+                        .phase-card-outline {
+                            padding: .6vw;
+                            border: .3vw solid #262261;
+                            .phase-card-inline {
+                                border: .4vw solid #262261;
+                                padding: 1vw;
+                                .phase-card-avatar {
+                                    img {
+                                        max-height: calc(100% - 3vw);
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .phase-curtain {
+            z-index: 1;
+        }
+        .phase-ground {
+            padding: 0vw 12vw 6vw 12vw;
+            background-image: url('../../../assets/images/mint/wood\ bg\ 1.png');
+            background-size: 100%;
+    
+            .phase-ground-cards {
+                position: relative;
+                top: -9vw;
+                gap: 8vw;
+                flex-direction: column;
+    
+                .phase-ground-card {
+                    height: 67vw;
+                    background: url('../../../assets/images/mint/notepad.png');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    flex: auto;
+    
+                    .phase-ground-card-title {
+                        padding-top: 4.5vw;
+                        font-weight: 700;
+                        font-size: 4.5vw;
+                        line-height: 1.6vw;
+                        text-align: center;
+                        color: #FFFFFF;
+                        text-transform: uppercase;
+                    }
+    
+                    .phase-ground-card-description {
+                        box-sizing: border-box;
+                        padding-top: 10vw;
+                        padding-left: 6vw;
+                        padding-right: 6vw;
+                        font-weight: 400;
+                        font-size: 3.6vw;
+                        line-height: 4.5vw;
+                        width: 100%;
+                        margin: auto;
+                        text-align: left;
+                        
+                        color: #262261;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 3vw;
+    
+                        .phase-ground-card-paragraph {
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+.wunderverse {
+    
+    height: 100%;
+    min-height: 100vh;
+
+    background: url('../../assets/images/background-team.png');
+    background-size: 100% 100%;
+    text-align: left;
+    
+    .slider__container {
+        section>div {
+            position: static;
+            transform: none;
+            font-family: 'monarcha';
+            font-size: inherit;
+            color: unset;
+            width:37.5%;
+            padding-left: 164px;
+            padding-top: 140px;
+            text-transform: inherit;
+        }
+    }
+    .slider__indicators {
+        transform: none;
+        left: 0px;
+        top: 150px;
+        padding-left: 80px;
+        padding-right: 80px;
+        
+        .slider__indicator {
+            
+            height: 140px;
+            width: 0px;
+            border: 4px solid #B2CBE1;
+            border-radius: 8px;
+        }
+
+        .slider__indicator--active {
+            border: 4px solid #6E00FF;
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 1920px) {
+    .wunderverse {
+        .slider__container {
+            section>div {
+                padding-left: calc(8vw + 4px);
+            }
+        }
+
+        .slider__indicators {
+
+            padding-left: 4vw;
+            padding-right: 4vw;
+            gap: .5vw;
+            
+            .slider__indicator {
+                
+                height: 7vw;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1080px) {
+    .wunderverse {
+        background: linear-gradient(180deg, #ECFBFF 0%, #E8E9FF 100%);
+
+        .slider__container {
+            section>div {
+                box-sizing: border-box;
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                min-height: 100vh;
+                padding: 0;
+                padding-top: 20vw;
+            }
+        }
+        
+        .slider__indicators {
+            width: 100%;
+            padding-top: 20vw;
+            flex-direction: column-reverse;
+            display: none;
+            left: calc(50% - 52vw);
+            display: flex;
+            align-items: flex-end;
+            bottom: 0;
+            top: unset;
+            padding-bottom: 2vw;
+            gap: 1vw;
+            flex-direction: row;
+            justify-content: center;
+            
+            .slider__indicator {
+                position: relative;
+                
+                width: 14vw;
+                height: 0;
+                bottom: 0;
+                border: .4vw solid #B2CBE1;
+                border-radius: .8vw;
+            }
+            
+            .slider__indicator--active {
+                border: .4vw solid #6E00FF;
+                opacity: 1;
+                /* opacity: 0.3; */
+            }
+        }
+            // .wunderverse-content {
+            //     height: 100%;
+            //     min-height: 100vh;
+            //     padding-bottom: 12vw;
+            //     overflow: auto;
+
+            //     section>div {
+            //         width: calc(100% - 12vw);
+            //     }
+            // }
+    }
+}

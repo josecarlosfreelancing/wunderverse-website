@@ -1,0 +1,427 @@
+.counting {
+    min-height: 100vh;
+    height: 100%;
+    background: url('../../../assets/images/mint/background.png');
+    background-position: top center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    .counting-container {
+        .counting-content {
+            padding-left: 85px;
+            padding-right: 85px;
+            padding-top: 480px;
+            padding-bottom: 80px;
+            // padding-top: 120px;
+
+            .mint-box {
+                padding-bottom: 75px;
+            }
+
+            .phase-box {
+                background: linear-gradient(180deg, #B5F5FA 0%, #BEA1E3 100%);
+                /* main color/dark blue */
+
+                border: 5px solid #262261;
+                box-shadow: 6px 6px 0px #FFFFFF;
+                border-radius: 2.37626px;
+                padding: 50px;
+                text-align: left;
+
+                .phase-title {
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 66px;
+                    text-transform: uppercase;
+
+                    /* Darkest blue */
+
+                    color: #232156;
+                }
+
+                .phase-content {
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .phase-description {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 56px;
+                        width: 554px;
+                        padding-top: 56px;
+
+                        .phase-description-paragraph {
+                            font-weight: 400;
+                            font-size: 30px;
+                            line-height: 38px;
+                            
+                            /* Darkest blue */
+                            
+                            color: #232156;
+                        }
+                    }
+
+                    .phase-counting {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 50px;
+                        padding-top: 50px;
+
+                        .phase-eth-price {
+                            font-family:"rockwell-extra";
+                            font-weight: 800;
+                            font-size: 48px;
+                            line-height: 57px;
+                            text-align: right;
+
+                            color: #00FFFF;
+
+                            -webkit-text-stroke: 5px #262261;
+                            text-shadow: 5px 5px 0px #FFFFFF;
+                        }
+
+                        .phase-nft-count {
+                            font-family: 'rockwell-extra';
+                            font-style: normal;
+                            font-weight: 800;
+                            font-size: 48px;
+                            line-height: 57px;
+                            text-align: right;
+                            
+                            color: #48FF96;
+                            
+                            -webkit-text-stroke: 5px #262261;
+                            text-shadow: 5px 5px 0px #FFFFFF;
+                        }
+
+                        .phase-counting-box {
+                            width: 670px;
+                            height: 125px;
+                            display: flex;
+                            align-items: center;
+                            background: linear-gradient(180deg, #A277DA 0%, #6E00FF 100%);
+                            justify-content: space-between;
+                            padding-right: 20px;
+                            padding-left: 20px;
+                            /* main color/dark blue */
+
+                            border: 4px solid #262261;
+                            box-shadow: 4px 4px 0px #FFFFFF;
+                            border-radius: 2px;
+                            gap: 20px;
+
+                            .phase-lion-image {
+                                position: relative;
+                                bottom: 40px;
+                            }
+
+                            .phase-text {
+                                display: flex;
+                                gap: 30px;
+
+                                .phase-timer {
+                                    .phase-timer-begin {
+                                        font-size: 22px;
+                                        line-height: 28px;
+                                        color: rgba(255, 255, 255, 0.6);
+                                    }
+
+                                    .phase-date-timer {
+                                        padding-top: 12px;
+                                        font-size: 30px;
+                                        font-weight: 700;
+                                        font-family: 'alverata';
+                                        color: #FFFFFF;
+                                    }
+                                }
+
+                                .phase-connect-wallet {
+                                    cursor: pointer;
+                                    display: flex;
+                                    background: #00FFFF;
+                                    border: 3px solid #1E1B4E;
+                                    border-radius: 5px;
+                                    align-items: center;
+                                    padding: 6px 10px;
+                                    gap: 8px;
+                                    text-transform: uppercase;
+
+                                    img {
+
+                                    }
+
+                                    .phase-connect-wallet-text {
+                                        font-family: 'alverata';
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        /* identical to box height, or 126% */
+                                        
+                                        text-align: center;
+                                        
+                                        /* main color/dark blue */
+                                        
+                                        color: #262261;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1920px) {
+    .counting {
+    
+        .counting-container {
+            .counting-content {
+                padding-left: 4.25vw;
+                padding-right: 4.25vw;
+                padding-top: 24vw;
+                padding-bottom: 4vw;
+
+                .mint-box {
+                    padding-bottom: 3.75vw;
+
+                    img {
+                        width: 29.35vw;
+                        height: 26.5vw;
+                    }
+                }
+    
+                .phase-box {
+                    border: .25vw solid #262261;
+                    box-shadow: .3vw .3vw 0px #FFFFFF;
+                    border-radius: 1vw;
+                    padding: 2.5vw;
+    
+                    .phase-title {
+                        font-size: 2.4vw;
+                        line-height: 3.3vw;
+                    }
+    
+                    .phase-content {
+                        .phase-description {
+                            gap: 2.8vw;
+                            width: 27.7vw;
+                            padding-top: 2.8vw;
+    
+                            .phase-description-paragraph {
+                                font-size: 1.5vw;
+                                line-height: 1.9vw;
+                            }
+                        }
+    
+                        .phase-counting {
+                            gap: 2.5vw;
+                            padding-top: 2.5vw;
+    
+                            .phase-eth-price {
+                                font-size: 2.4vw;
+                                line-height: 2.85vw;
+                                -webkit-text-stroke: .25vw #262261;
+                                text-shadow: .25vw .25vw 0px #FFFFFF;
+                            }
+    
+                            .phase-nft-count {
+                                font-size: 2.4vw;
+                                line-height: 2.85vw;
+                                -webkit-text-stroke: .25vw #262261;
+                                text-shadow: .25vw .25vw 0px #FFFFFF;
+                            }
+    
+                            .phase-counting-box {
+                                width: 33.5vw;
+                                height: 6.25vw;
+                                padding-right: 1vw;
+                                padding-left: 1vw;
+                                border: .2vw solid #262261;
+                                box-shadow: .2vw .2vw 0px #FFFFFF;
+                                border-radius: .1vw;
+                                gap: 1vw;
+    
+                                .phase-lion-image {
+                                    bottom: 2vw;
+
+                                    img {
+                                        width: 6vw;
+                                        height: 10vw;
+                                    }
+                                }
+                                
+                                .phase-text {
+                                    display: flex;
+                                    gap: 1.5vw;
+                                    .phase-timer {
+                                        .phase-timer-begin {
+                                            font-size: 1.1vw;
+                                            line-height: 1.4vw;
+                                        }
+        
+                                        .phase-date-timer {
+                                            padding-top: .6vw;
+                                            font-size: 1.5vw;
+                                        }
+                                    }
+        
+                                    .phase-connect-wallet {
+                                        border: .15vw solid #1E1B4E;
+                                        border-radius: .25vw;
+                                        padding: .3vw .5vw;
+                                        gap: .4vw;
+                                        img {
+                                            width: 2vw;
+                                            height: 2vw;
+                                        }
+        
+                                        .phase-connect-wallet-text {
+                                            font-size: .8vw;
+                                            line-height: 1vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .counting {
+        background: #406853;
+
+        .counting-container {
+            background-image: url('../../../assets/images/mint/background.png');
+            background-position: top center;
+            background-size: 150% auto;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+
+            .counting-content {
+                padding-left: 8.5vw;
+                padding-right: 8.5vw;
+                padding-top: 30vw;
+                padding-bottom: 8vw;
+
+                .mint-box {
+                    padding-bottom: 7.5vw;
+
+                    img {
+                        width: 60vw;
+                        height: 53vw;
+                    }
+                }
+    
+                .phase-box {
+                    border: .5vw solid #262261;
+                    box-shadow: .6vw .6vw 0px #FFFFFF;
+                    border-radius: 2vw;
+                    padding: 5vw;
+    
+                    .phase-title {
+                        font-size: 4.8vw;
+                        line-height: 6.6vw;
+                    }
+    
+                    .phase-content {
+                        flex-direction: column;
+                        
+                        .phase-description {
+                            gap: 3.6vw;
+                            width: 100%;
+                            padding-top: 5.6vw;
+    
+                            .phase-description-paragraph {
+                                font-size: 3vw;
+                                line-height: 3.8vw;
+                            }
+                        }
+    
+                        .phase-counting {
+                            gap: 5vw;
+                            padding-top: 5vw;
+    
+                            .phase-eth-price {
+                                font-size: 4.8vw;
+                                line-height: 5.7vw;
+                                -webkit-text-stroke: .5vw #262261;
+                                text-shadow: .5vw .5vw 0px #FFFFFF;
+                            }
+    
+                            .phase-nft-count {
+                                font-size: 4.8vw;
+                                line-height: 5.7vw;
+                                -webkit-text-stroke: .5vw #262261;
+                                text-shadow: .5vw .5vw 0px #FFFFFF;
+                            }
+    
+                            .phase-counting-box {
+                                width: 67vw;
+                                height: 12.5vw;
+                                padding-right: 2vw;
+                                padding-left: 2vw;
+                                border: .4vw solid #262261;
+                                box-shadow: .4vw .4vw 0px #FFFFFF;
+                                border-radius: .2vw;
+                                gap: 2vw;
+    
+                                .phase-lion-image {
+                                    bottom: 4vw;
+
+                                    img {
+                                        width: 12vw;
+                                        height: 20vw;
+                                    }
+                                }
+                                
+                                .phase-text {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 1vw;
+
+                                    .phase-timer {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 1vw;
+
+                                        .phase-timer-begin {
+                                            font-size: 2.2vw;
+                                            line-height: 2.8vw;
+                                        }
+        
+                                        .phase-date-timer {
+                                            padding-top: 0vw;
+                                            font-size: 3vw;
+                                        }
+                                    }
+        
+                                    .phase-connect-wallet {
+                                        border: .3vw solid #1E1B4E;
+                                        border-radius: .5vw;
+                                        padding: .6vw 1vw;
+                                        gap: .8vw;
+                                        img {
+                                            width: 4vw;
+                                            height: 4vw;
+                                        }
+        
+                                        .phase-connect-wallet-text {
+                                            font-size: 1.6vw;
+                                            line-height: 2vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

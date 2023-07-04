@@ -1,0 +1,217 @@
+.team {
+    .team-title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 70px;
+        
+        font-family: 'alverata';
+    }
+
+    .team-description {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        font-size: 24px;
+        line-height: 31px;
+
+        color: #000000;
+    }
+
+    .team-cards {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 10px;
+        padding-bottom: 25px;
+        border-bottom: 3px solid #262261;
+        
+        .team-card {
+            transform: scale(1);
+            height: 10vw;
+            border: 2px solid #262261;
+            // box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+            border-radius: 2px;
+            padding: 2px;
+            cursor: pointer;
+
+            .team-card-inline {
+                height: calc(100% - 4px);
+                border: 2px solid #262261;
+
+                .team-avatar {
+                    text-align: center;
+                    height: 100%;
+                    // transform: matrix(-1, 0, 0, 1, 0, 0);
+                    img {
+                        padding-top: 10%;
+                        // width: 100%;
+                        height: 80%;
+                    }
+
+                    background: url('../../../assets/images/shadow.png');
+                    background-repeat: no-repeat;
+                    background-position: center bottom;
+                }
+            }
+        }
+
+        .team-card:hover {
+            transform: scaleX(1.3) scaleY(1.2);
+            z-index: 1;
+        }
+    }
+
+    .team-role {
+        padding-top: 20px;
+        color: #232156;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .team-role-pos {
+            font-weight: 700;
+
+            small {
+                font-size: 18px;
+            }
+        }
+
+        .team-role-contact {
+            display: flex;
+            align-items: center;
+        }
+
+        // .team-role-description {
+
+        // }
+    }
+}
+
+@media (max-width: 1920px) {
+    .team {
+        .team-title {
+            font-size: 3.2vw;
+            line-height: 3.5vw;
+        }
+
+        .team-description {
+            padding-top: 1.5vw;
+            padding-bottom: 2vw;
+            font-size: 1.2vw;
+            line-height: 1.5vw;
+        }
+
+        .team-cards {
+            gap: .5vw;
+            padding-bottom: 1.3vw;
+
+            .team-card {
+
+                .team-card-inline {
+                    .team-avatar {
+                    }
+                }
+            }
+        }
+
+        .team-role {
+            padding-top: 1vw;
+            font-size: 1.2vw;
+            gap: .5vw;
+    
+            .team-role-contact {
+                img {
+                    width: 2vw;
+                }
+            }
+
+            .team-role-pos {
+                small {
+                    font-size: .9vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .team {
+        height: 80vh;
+        overflow-y: auto;
+        .team-title {
+            font-weight: 700;
+            font-size: 6.4vw;
+            line-height: 7vw;
+            padding-left: 6vw;
+            padding-right: 6vw;
+        }
+
+        .team-description {
+            padding: 5vw 6vw 7vw 6vw;
+            font-size: 3.2vw;
+            line-height: 4vw;
+        }
+
+        .team-cards {
+            gap: 1.6vw;
+            padding-bottom: 3.5vw;
+            margin-left: 6vw;
+            margin-right: 6vw;
+            justify-content: flex-start;
+            .team-card {
+                height: unset;
+                width: 20vw;
+                border: 2px solid #262261;
+                border-radius: 2px;
+                padding: .2vw;
+
+                .team-card-inline {
+                    height: calc(100% - 4px);
+                    border: 2px solid #262261;
+
+                    .team-avatar {
+                        left: -2vw;
+                        height: 24vw;
+                    }
+                }
+            }
+        }
+        
+        .team-role {
+            padding: 2vw 6vw 0vw 6vw;
+            font-size: 3.2vw;
+            line-height: 4vw;
+            gap: 1vw;
+
+            .team-role-contact {
+                img {
+                    width: 4vw;
+                }
+            }
+            
+            .team-role-pos {
+                small {
+                    font-size: 2.4vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .team {
+        .team-cards {
+            grid-template-columns: repeat(3, auto);
+
+            .team-card {
+                justify-content: center;
+                width: 25vw;
+
+                .team-card-inline {
+                    .team-avatar {
+                        height: 28vw;
+                    }
+                }
+            }
+        }
+    }
+}

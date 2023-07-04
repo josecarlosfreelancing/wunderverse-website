@@ -1,0 +1,344 @@
+.minting {
+    min-height: 100vh;
+    height: 100%;
+    background-image: url('../../../assets/images/mint/background.png');
+    background-position: top center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    .minting-container {
+        .minting-content {
+            padding-left: 85px;
+            padding-right: 85px;
+            padding-top: 480px;
+            padding-bottom: 80px;
+            // padding-top: 120px;
+
+            .minting-box {
+                padding-bottom: 75px;
+            }
+
+            .minting-phase-box {
+                background: linear-gradient(180deg, #B5F5FA 0%, #BEA1E3 100%);
+                /* main color/dark blue */
+
+                border: 5px solid #262261;
+                box-shadow: 6px 6px 0px #FFFFFF;
+                border-radius: 2.37626px;
+                padding: 50px;
+                text-align: left;
+
+                .minting-phase-title {
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 66px;
+                    text-transform: uppercase;
+
+                    /* Darkest blue */
+
+                    color: #232156;
+                }
+
+                .minting-phase-content {
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .minting-phase-description {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 56px;
+                        width: 554px;
+                        padding-top: 56px;
+
+                        .minting-phase-description-paragraph {
+                            font-weight: 400;
+                            font-size: 30px;
+                            line-height: 38px;
+                            
+                            /* Darkest blue */
+                            
+                            color: #232156;
+                        }
+                    }
+
+                    .minting-counting {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 50px;
+                        padding-top: 50px;
+
+                        .minting-eth-price {
+                            font-family:"rockwell-extra";
+                            font-weight: 800;
+                            font-size: 48px;
+                            line-height: 57px;
+                            text-align: right;
+
+                            color: #00FFFF;
+                            
+                            -webkit-text-stroke: 5px #262261;
+                            text-shadow: 5px 5px 0px #FFFFFF;
+                        }
+
+                        .minting-nft-count {
+                            font-family: 'rockwell-extra';
+                            font-style: normal;
+                            font-weight: 800;
+                            font-size: 48px;
+                            line-height: 57px;
+                            text-align: right;
+                            
+                            color: #48FF96;
+                            
+                            -webkit-text-stroke: 5px #262261;
+                            text-shadow: 5px 5px 0px #FFFFFF;
+                        }
+
+                        .minting-counting-box {
+                            width: 450px;
+                            height: 125px;
+                            display: flex;
+                            align-items: center;
+                            background: linear-gradient(180deg, #A277DA 0%, #6E00FF 100%);
+                            justify-content: space-between;
+                            padding-right: 20px;
+                            padding-left: 20px;
+                            /* main color/dark blue */
+
+                            border: 4px solid #262261;
+                            box-shadow: 4px 4px 0px #FFFFFF;
+                            border-radius: 2px;
+                            gap: 20px;
+
+                            .minting-lion-image {
+                                position: relative;
+                                bottom: 40px;
+                                left: -55px;
+                            }
+
+                            .minting-now {
+                                background: #48FF96;
+                                border: 3px solid #1E1B4E;
+                                border-radius: 5px;
+                                cursor: pointer;
+                                font-weight: 700;
+                                font-size: 24px;
+                                font-family: 'alverata';
+                                line-height: 20px;
+                                padding: 14px 18px;
+                                /* identical to box height, or 84% */
+
+                                text-align: center;
+
+                                /* main color/dark blue */
+
+                                color: #262261;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1920px) {
+    .minting {
+    
+        .minting-container {
+            .minting-content {
+                padding-left: 4.25vw;
+                padding-right: 4.25vw;
+                padding-top: 24vw;
+                padding-bottom: 4vw;
+
+                .minting-box {
+                    padding-bottom: 3.75vw;
+
+                    img {
+                        width: 29.35vw;
+                        height: 26.5vw;
+                    }
+                }
+    
+                .minting-phase-box {
+                    border: .25vw solid #262261;
+                    box-shadow: .3vw .3vw 0px #FFFFFF;
+                    border-radius: 1vw;
+                    padding: 2.5vw;
+    
+                    .minting-phase-title {
+                        font-size: 2.4vw;
+                        line-height: 3.3vw;
+                    }
+    
+                    .minting-phase-content {
+                        .minting-phase-description {
+                            gap: 2.8vw;
+                            width: 27.7vw;
+                            padding-top: 2.8vw;
+    
+                            .minting-phase-description-paragraph {
+                                font-size: 1.5vw;
+                                line-height: 1.9vw;
+                            }
+                        }
+    
+                        .minting-counting {
+                            gap: 2.5vw;
+                            padding-top: 2.5vw;
+    
+                            .minting-eth-price {
+                                font-size: 2.4vw;
+                                line-height: 2.85vw;
+                                -webkit-text-stroke: .25vw #262261;
+                                text-shadow: .25vw .25vw 0px #FFFFFF;
+                            }
+    
+                            .minting-nft-count {
+                                font-size: 2.4vw;
+                                line-height: 2.85vw;
+                                -webkit-text-stroke: .25vw #262261;
+                                text-shadow: .25vw .25vw 0px #FFFFFF;
+                            }
+    
+                            .minting-counting-box {
+                                width: 22.5vw;
+                                height: 6.25vw;
+                                padding-right: 1vw;
+                                padding-left: 1vw;
+                                border: .2vw solid #262261;
+                                box-shadow: .2vw .2vw 0px #FFFFFF;
+                                border-radius: .1vw;
+                                gap: 1vw;
+    
+                                .minting-lion-image {
+                                    bottom: 2vw;
+                                    left: -2.75vw;
+
+                                    img {
+                                        width: 8.5vw;
+                                        height: 9.6vw;
+                                    }
+                                }
+    
+                                .minting-now {
+                                    border: .15vw solid #1E1B4E;
+                                    border-radius: .25vw;
+                                    font-size: 1.2vw;
+                                    line-height: 1vw;
+                                    padding: .7vw .9vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .minting {
+        background: #406853;
+    
+        .minting-container {
+            background-image: url('../../../assets/images/mint/background.png');
+            background-position: top center;
+            background-size: 150% auto;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            
+            .minting-content {
+                padding-left: 8.5vw;
+                padding-right: 8.5vw;
+                padding-top: 30vw;
+                padding-bottom: 8vw;
+
+                .minting-box {
+                    padding-bottom: 7.5vw;
+
+                    img {
+                        width: 60vw;
+                        height: 53vw;
+                    }
+                }
+    
+                .minting-phase-box {
+                    border: .5vw solid #262261;
+                    box-shadow: .6vw .6vw 0px #FFFFFF;
+                    border-radius: 2vw;
+                    padding: 5vw;
+    
+                    .minting-phase-title {
+                        font-size: 4.8vw;
+                        line-height: 6.6vw;
+                    }
+    
+                    .minting-phase-content {
+                        flex-direction: column;
+                        
+                        .minting-phase-description {
+                            gap: 3.6vw;
+                            width: 100%;
+                            padding-top: 5.6vw;
+    
+                            .minting-phase-description-paragraph {
+                                font-size: 3vw;
+                                line-height: 3.8vw;
+                            }
+                        }
+    
+                        .minting-counting {
+                            gap: 5vw;
+                            padding-top: 5vw;
+    
+                            .minting-eth-price {
+                                font-size: 4.8vw;
+                                line-height: 5.7vw;
+                                -webkit-text-stroke: .5vw #262261;
+                                text-shadow: .5vw .5vw 0px #FFFFFF;
+                            }
+    
+                            .minting-nft-count {
+                                font-size: 4.8vw;
+                                line-height: 5.7vw;
+                                -webkit-text-stroke: .5vw #262261;
+                                text-shadow: .5vw .5vw 0px #FFFFFF;
+                            }
+    
+                            .minting-counting-box {
+                                width: 67vw;
+                                height: 12.5vw;
+                                padding-right: 2vw;
+                                padding-left: 2vw;
+                                border: .4vw solid #262261;
+                                box-shadow: .4vw .4vw 0px #FFFFFF;
+                                border-radius: .2vw;
+                                gap: 2vw;
+    
+                                .minting-lion-image {
+                                    bottom: 4vw;
+                                    left: -5.5vw;
+
+                                    img {
+                                        width: 17vw;
+                                        height: 19.2vw;
+                                    }
+                                }
+    
+                                .minting-now {
+                                    border: .3vw solid #1E1B4E;
+                                    border-radius: .5vw;
+                                    font-size: 2.4vw;
+                                    line-height: 2vw;
+                                    padding: 1.4vw 1.8vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
